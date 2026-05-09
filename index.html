@@ -3,137 +3,270 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio | インフラエンジニア</title>
-    <style>
-        /* 基本的なスタイリング */
-        body {
-            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
-        }
-        header {
-            text-align: center;
-            padding: 40px 0;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin-bottom: 30px;
-        }
-        h1 { margin: 0; color: #2c3e50; }
-        h2 { border-bottom: 2px solid #3498db; padding-bottom: 5px; color: #2c3e50; margin-top: 40px;}
-        section {
-            background-color: #fff;
-            padding: 20px 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-        }
-        ul { padding-left: 20px; }
-        a { color: #3498db; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #3498db;
-            color: #fff;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-        .btn:hover { background-color: #2980b9; color: #fff; text-decoration: none; }
-        
-        /* お問い合わせフォーム用 */
-        form { display: flex; flex-direction: column; }
-        label { margin-top: 10px; font-weight: bold; }
-        input, textarea { padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; }
-        button { margin-top: 15px; padding: 10px; background-color: #2ecc71; color: white; border: none; border-radius: 4px; cursor: pointer; }
-        button:hover { background-color: #27ae60; }
-    </style>
+    <title>Takuto Kashiwagi | Portfolio</title>
+    <meta name="description" content="柏木拓斗（Takuto Kashiwagi）のポートフォリオサイト。現役インフラ系ITエンジニアとしての経歴、スキル、開発実績、クラウドソーシング情報を掲載しています。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <div class="background-elements">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
 
-    <header>
-        <h1>[あなたのお名前]</h1>
-        <p>インフラエンジニア / ITマネージャー</p>
-    </header>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Takuto<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
 
-    <section id="about">
-        <h2>経歴・スキル</h2>
-        <p>インフラ構築・ネットワーク管理の責任者としてチームを牽引しつつ、日々の業務効率化を推進しています。手動作業を自動化するツールの開発を得意としており、インフラと開発の両面からビジネスをサポートします。</p>
-        <ul>
-            <li><strong>インフラ・ネットワーク:</strong> Windows Server管理, ネットワーク構築, チームマネジメント</li>
-            <li><strong>プログラミング・自動化:</strong> Python, Google Apps Script (GAS), PowerShell, Excel VBA</li>
-            <li><strong>学習中の領域:</strong> CCNA/CCNP, AWS Solutions Architect, Linux (LPIC)</li>
-        </ul>
-    </section>
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero section">
+            <div class="container hero-content">
+                <p class="greeting reveal">Hello, I'm</p>
+                <h1 class="name reveal delay-1">柏木 拓斗</h1>
+                <h2 class="title reveal delay-2">Infrastructure Engineer <span class="highlight">&</span> Creator</h2>
+                <p class="bio reveal delay-3">
+                    現役のインフラ系ITエンジニアとして働く傍ら、趣味でツールを作成したり、ウェブサイトを運用したりしています。<br>
+                    クラウドソーシングなどもやっているので、何かご興味を持っていただけたらぜひお声がけください。
+                </p>
+                <div class="cta-buttons reveal delay-4">
+                    <a href="#works" class="btn btn-primary">開発実績を見る</a>
+                    <a href="#contact" class="btn btn-outline">お問い合わせ</a>
+                </div>
+            </div>
+        </section>
 
-    <section id="history">
-        <h2>エンジニアとしての仕事の経歴</h2>
-        <ul>
-            <li><strong>202X年 - 現在: ITマネージャー / インフラエンジニア</strong><br>
-                社内ネットワークの管理およびインフラ保守を担当。メンバーの育成・マネジメント（業務評価、モチベーション管理）を行いながら、外部ベンダーとの折衝を主導。</li>
-            <li><strong>業務改善プロジェクト:</strong><br>
-                GASやPythonを用いた社内ツールの開発により、データ集計や報告業務にかかる工数を大幅に削減。</li>
-        </ul>
-    </section>
+        <!-- About Section (History & Certifications) -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">About Me</h2>
+                
+                <div class="about-grid">
+                    <div class="history-card glass-card reveal">
+                        <h3><i class="fas fa-history"></i> 経歴</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2017年3月</div>
+                                <div class="timeline-content">工業高校電気科 卒業</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2017年4月</div>
+                                <div class="timeline-content">公務員として技術事務系業務 (約2年)</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2018年12月</div>
+                                <div class="timeline-content">食品工場での総菜製造 (約4年)</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2022年7月</div>
+                                <div class="timeline-content">不動産営業として訪問販売 (1年)</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2023年7月</div>
+                                <div class="timeline-content">アルバイトの傍らIT資格の勉強</div>
+                            </div>
+                            <div class="timeline-item active">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2024年12月</div>
+                                <div class="timeline-content">インフラ系ITエンジニアとして就職 (現在)</div>
+                            </div>
+                        </div>
+                    </div>
 
-    <section id="portfolio">
-        <h2>ポートフォリオ・運営サイト</h2>
-        <ul>
-            <li>
-                <strong>アニメ情報発信サイト</strong><br>
-                自身の趣味を活かし、アニメの最新情報やおすすめ作品を紹介するWebサイトをVercelにて運用中。<br>
-                <a href="https://koremiyo-anime.online" target="_blank">サイトを見る</a>
-            </li>
-        </ul>
-    </section>
+                    <div class="cert-card glass-card reveal delay-1">
+                        <h3><i class="fas fa-certificate"></i> 取得済み資格</h3>
+                        <ul class="cert-list">
+                            <li><i class="fas fa-check-circle"></i> 第2種電気工事士</li>
+                            <li><i class="fas fa-check-circle"></i> 第1種電気工事士試験合格</li>
+                            <li><i class="fas fa-check-circle"></i> LPIC-1 Certification</li>
+                            <li><i class="fas fa-check-circle"></i> AWS Certified Cloud Practitioner</li>
+                            <li><i class="fas fa-check-circle"></i> AWS Certified Solutions Architect – Associate</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="tools">
-        <h2>作成したツールの販売</h2>
-        <p>日常の煩雑なタスクを自動化し、時間を創出するためのツールを開発・販売しています。</p>
-        <ul>
-            <li>
-                <strong>Gmail連携 金融データ自動抽出スクリプト（GAS）</strong><br>
-                クレジットカードの利用通知メールから自動で情報を抽出し、スプレッドシートに記録する自動化ツール。<br>
-                <a href="#" class="btn">販売ページへ（準備中）</a>
-            </li>
-            <li>
-                <strong>AI活用 商品説明文自動生成ツール（Python）</strong><br>
-                画像や基本情報からオークション用の魅力的な紹介文を自動生成するスクリプト。<br>
-                <a href="#" class="btn">販売ページへ（準備中）</a>
-            </li>
-        </ul>
-    </section>
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">Skills</h2>
+                <div class="skills-container glass-card reveal">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-laptop-code"></i> プログラミング・開発</h3>
+                        <div class="skill-tags">
+                            <span>Python</span>
+                            <span>HTML</span>
+                            <span>GASスクリプト作成</span>
+                            <span>ウェブアプリ作成</span>
+                            <span>VBA</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-chart-line"></i> ビジネス・マーケティング</h3>
+                        <div class="skill-tags">
+                            <span>Excel (データ入力・数式)</span>
+                            <span>Word / PowerPoint</span>
+                            <span>ECサイト商品登録</span>
+                            <span>ライティング</span>
+                            <span>公式LINE運用</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-photo-video"></i> クリエイティブ</h3>
+                        <div class="skill-tags">
+                            <span>写真編集</span>
+                            <span>動画編集</span>
+                            <span>AI活用 (イラスト生成・コーディング)</span>
+                        </div>
+                    </div>
+                    <div class="skill-category learning">
+                        <h3><i class="fas fa-book-open"></i> 学習中</h3>
+                        <div class="skill-tags">
+                            <span class="learning-tag">ウェブスクレイピング</span>
+                            <span class="learning-tag">英語</span>
+                            <span class="learning-tag">韓国語</span>
+                            <span class="learning-tag">中国語</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="sns">
-        <h2>SNSリンク</h2>
-        <ul>
-            <li><a href="https://twitter.com/your_handle" target="_blank">X (旧Twitter)</a></li>
-            <li><a href="https://github.com/your_handle" target="_blank">GitHub</a></li>
-            <li><a href="https://zenn.dev/your_handle" target="_blank">Zenn / Qiita</a></li>
-        </ul>
-    </section>
+        <!-- Works & Projects Section -->
+        <section id="works" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">Works & Projects</h2>
+                <div class="works-grid">
+                    <a href="https://www.koremiyo-anime.com" target="_blank" class="work-card glass-card reveal">
+                        <div class="work-content">
+                            <h3>アニメ抽選用ウェブアプリ</h3>
+                            <p>何を観るか迷った時に使える、アニメ作品をランダムで抽選するWebアプリケーション。</p>
+                            <span class="work-link">Visit Site <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                    
+                    <a href="https://koremiyo-anime.online" target="_blank" class="work-card glass-card reveal delay-1">
+                        <div class="work-content">
+                            <h3>API連携DMMウェブサイトツール/ブログ</h3>
+                            <p>DMMのAPIと連携して情報を取得・表示するWebサイトツールおよびブログシステム。</p>
+                            <span class="work-link">Visit Site <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-    <section id="contact">
-        <h2>お問い合わせ</h2>
-        <p>ツール開発のご相談や、お仕事の依頼はこちらからお願いいたします。</p>
-        <!-- Netlify Forms: data-netlify="true" を入れるだけで自動的にフォームが機能します -->
-        <form name="contact" method="POST" data-netlify="true">
-            <label for="name">お名前:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">メールアドレス:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">お問い合わせ内容:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-            
-            <button type="submit">送信する</button>
-        </form>
-    </section>
+        <!-- Crowdsourcing Section -->
+        <section id="crowdsourcing" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">Freelance & Crowdsourcing</h2>
+                <p class="section-subtitle reveal">以下プラットフォームにてお仕事のご依頼を受け付けております。</p>
+                <div class="platforms-grid reveal">
+                    <a href="https://crowdworks.jp/public/employees/2507285?ref=share_url_wkprofile" target="_blank" class="platform-btn">
+                        <i class="fas fa-briefcase"></i> クラウドワークス
+                    </a>
+                    <a href="https://coconala.com/users/3081562" target="_blank" class="platform-btn">
+                        <i class="fas fa-handshake"></i> ココナラ
+                    </a>
+                    <a href="https://www.lancers.jp/profile/Caka" target="_blank" class="platform-btn">
+                        <i class="fas fa-pen-nib"></i> ランサーズ
+                    </a>
+                    <a href="https://www.timeticket.jp/hosts/h7vtqrc49j0goub/" target="_blank" class="platform-btn">
+                        <i class="fas fa-ticket-alt"></i> タイムチケット
+                    </a>
+                </div>
+            </div>
+        </section>
 
+        <!-- Contact & SNS Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">Contact & Links</h2>
+                
+                <div class="contact-grid">
+                    <div class="contact-info glass-card reveal">
+                        <h3>Connect with me</h3>
+                        <p>お問い合わせやご相談は、メール・LINE・各SNSよりお気軽にどうぞ。</p>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:youzaineihai441@gmail.com">youzaineihai441@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-line"></i>
+                            <a href="https://lin.ee/VzyeBFN" target="_blank">公式LINE</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-discord"></i>
+                            <a href="https://discord.gg/89QNVfz8Y4" target="_blank">Discord サーバー</a>
+                        </div>
+                    </div>
+
+                    <div class="social-links glass-card reveal delay-1">
+                        <h3>SNS</h3>
+                        <div class="social-grid">
+                            <a href="https://x.com/KamizakiKi91769" target="_blank" class="social-btn x-btn">
+                                <i class="fab fa-x-twitter"></i> @KamizakiKi91769
+                            </a>
+                            <a href="https://note.com/takuto_kashiwagi" target="_blank" class="social-btn note-btn">
+                                <i class="fas fa-book"></i> note
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container glass-card reveal delay-2">
+                    <h3>お問い合わせフォーム</h3>
+                    <form name="contact" method="POST" data-netlify="true" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">お名前</label>
+                            <input type="text" id="name" name="name" required placeholder="山田 太郎">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">メールアドレス</label>
+                            <input type="email" id="email" name="email" required placeholder="example@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">メッセージ</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="お問い合わせ内容をご入力ください"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">送信する <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Takuto Kashiwagi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
