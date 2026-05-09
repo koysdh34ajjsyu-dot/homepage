@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | インフラエンジニア</title>
+    <style>
+        /* 基本的なスタイリング */
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        h1 { margin: 0; color: #2c3e50; }
+        h2 { border-bottom: 2px solid #3498db; padding-bottom: 5px; color: #2c3e50; margin-top: 40px;}
+        section {
+            background-color: #fff;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        ul { padding-left: 20px; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .btn:hover { background-color: #2980b9; color: #fff; text-decoration: none; }
+        
+        /* お問い合わせフォーム用 */
+        form { display: flex; flex-direction: column; }
+        label { margin-top: 10px; font-weight: bold; }
+        input, textarea { padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; }
+        button { margin-top: 15px; padding: 10px; background-color: #2ecc71; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background-color: #27ae60; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>[あなたのお名前]</h1>
+        <p>インフラエンジニア / ITマネージャー</p>
+    </header>
+
+    <section id="about">
+        <h2>経歴・スキル</h2>
+        <p>インフラ構築・ネットワーク管理の責任者としてチームを牽引しつつ、日々の業務効率化を推進しています。手動作業を自動化するツールの開発を得意としており、インフラと開発の両面からビジネスをサポートします。</p>
+        <ul>
+            <li><strong>インフラ・ネットワーク:</strong> Windows Server管理, ネットワーク構築, チームマネジメント</li>
+            <li><strong>プログラミング・自動化:</strong> Python, Google Apps Script (GAS), PowerShell, Excel VBA</li>
+            <li><strong>学習中の領域:</strong> CCNA/CCNP, AWS Solutions Architect, Linux (LPIC)</li>
+        </ul>
+    </section>
+
+    <section id="history">
+        <h2>エンジニアとしての仕事の経歴</h2>
+        <ul>
+            <li><strong>202X年 - 現在: ITマネージャー / インフラエンジニア</strong><br>
+                社内ネットワークの管理およびインフラ保守を担当。メンバーの育成・マネジメント（業務評価、モチベーション管理）を行いながら、外部ベンダーとの折衝を主導。</li>
+            <li><strong>業務改善プロジェクト:</strong><br>
+                GASやPythonを用いた社内ツールの開発により、データ集計や報告業務にかかる工数を大幅に削減。</li>
+        </ul>
+    </section>
+
+    <section id="portfolio">
+        <h2>ポートフォリオ・運営サイト</h2>
+        <ul>
+            <li>
+                <strong>アニメ情報発信サイト</strong><br>
+                自身の趣味を活かし、アニメの最新情報やおすすめ作品を紹介するWebサイトをVercelにて運用中。<br>
+                <a href="https://koremiyo-anime.online" target="_blank">サイトを見る</a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="tools">
+        <h2>作成したツールの販売</h2>
+        <p>日常の煩雑なタスクを自動化し、時間を創出するためのツールを開発・販売しています。</p>
+        <ul>
+            <li>
+                <strong>Gmail連携 金融データ自動抽出スクリプト（GAS）</strong><br>
+                クレジットカードの利用通知メールから自動で情報を抽出し、スプレッドシートに記録する自動化ツール。<br>
+                <a href="#" class="btn">販売ページへ（準備中）</a>
+            </li>
+            <li>
+                <strong>AI活用 商品説明文自動生成ツール（Python）</strong><br>
+                画像や基本情報からオークション用の魅力的な紹介文を自動生成するスクリプト。<br>
+                <a href="#" class="btn">販売ページへ（準備中）</a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="sns">
+        <h2>SNSリンク</h2>
+        <ul>
+            <li><a href="https://twitter.com/your_handle" target="_blank">X (旧Twitter)</a></li>
+            <li><a href="https://github.com/your_handle" target="_blank">GitHub</a></li>
+            <li><a href="https://zenn.dev/your_handle" target="_blank">Zenn / Qiita</a></li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>お問い合わせ</h2>
+        <p>ツール開発のご相談や、お仕事の依頼はこちらからお願いいたします。</p>
+        <!-- Netlify Forms: data-netlify="true" を入れるだけで自動的にフォームが機能します -->
+        <form name="contact" method="POST" data-netlify="true">
+            <label for="name">お名前:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">メールアドレス:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">お問い合わせ内容:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">送信する</button>
+        </form>
+    </section>
+
+</body>
+</html>
